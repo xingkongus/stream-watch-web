@@ -21,7 +21,9 @@ apps = GET['app'];
 if(apps != null && apps.length > 0){
 	$('#source').attr('src','/hls/' + apps[0] + '.m3u8');
 	$('#source').attr('type','application/x-mpegURL');
-} 
+}else{
+	apps = new Array();
+}
 apps['data'] = new Array();
 //绑定onload事件
 $(window).bind("load",function(){
