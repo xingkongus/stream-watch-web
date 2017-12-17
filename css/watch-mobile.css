@@ -1,0 +1,49 @@
+body {
+	width: 20;
+
+}
+.boxx {
+	margin-top:0;
+	padding: 0;
+	margin-left: 0px;
+	width: 100%;
+	background-color :rgb(55,76,97);
+}
+.boxx form {
+	text-align:center;
+
+}
+.boxx input {
+	width:70%;
+	padding:5px;
+	border-radius:10px;
+}
+.boxx button {
+	background-color: #fff;
+	width:20%;
+	padding:5px;
+	border-radius:5px;
+}
+.boxx ul {
+	list-style:none; /* 将默认的列表符号去掉 */
+/* 	border:1px solid;
+	border-color: #111;
+	border-radius:5px; */
+	width: 85%;
+	height: 250px;
+	overflow-y:scroll;
+}
+.boxx li {
+ /* border:1px solid;
+	border-color: rgba(200,200,200,10);
+	border-radius:5px; */
+	margin-bottom: 4px;
+}
+
+.vc {
+	margin-left: 0px;
+	width: 100%;
+
+}
+
+
