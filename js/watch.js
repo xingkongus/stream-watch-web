@@ -38,13 +38,6 @@ if(app != null){
 		}
 		
 	}
-}else{
-	apps = new Array();
-}
-apps['data'] = new Array();
-//绑定onload事件
-$(window).bind("load",function(){
-	resize();
 	
 }
 
@@ -72,7 +65,7 @@ if(group != null){
 				
 				var item = '<li onclick="selectStream(\'' + obj.apps[index].appname + '\');">' + obj.apps[index].title + '</li>';
 				$('#m').html($('#m').html() + item);
-				$('#m').css('top',-$('#m').height() - $('#chooser').height());
+				$('#m').css('top',$('#chooser').height());
 			}
 		
 		}
@@ -193,6 +186,7 @@ function turn() {
 
 function selectStream(appname){
 	console.log(appname);
+
 	$('#source').attr('src','/hls/' + appname + '.m3u8');
 	$('#source').attr('type','application/x-mpegURL');
 	$('#my-video_html5_api').attr('src','/hls/' + appname + '.m3u8');

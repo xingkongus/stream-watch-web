@@ -87,6 +87,7 @@ footer a {
 }
 
 .video-bar {
+	
 	-webkit-user-select:none;user-select:none;
 	cursor: default;
 	font-size: 12px;
@@ -103,7 +104,7 @@ footer a {
 
 #chooser{
 	
-	position:relative;
+	position:absolute;
 	
 }
 
