@@ -38,6 +38,13 @@ if(app != null){
 		}
 		
 	}
+}else{
+	apps = new Array();
+}
+apps['data'] = new Array();
+//绑定onload事件
+$(window).bind("load",function(){
+	resize();
 	
 }
 
