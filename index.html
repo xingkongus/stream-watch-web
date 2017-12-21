@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+	<meta name="keywords" content="星空直播 星空学生创新中心 直播 网络直播" />
+	<meta name="description" content="星空学生创新中心校园直播网站。" />
+	
 	<title>星空直播</title>
 
 	<link href="css/video-js.css" rel="stylesheet">	
@@ -24,98 +26,15 @@
 			<div class="vc">
 				<video id="my-video" class="video-js" controls="controls" preload="auto" poster="img/player_bg.jpg" data-setup="{}">
  					<source id="source">
-					<!--type='application/x-mpegURL'>-->
+					
 				</video>
-
-				<style>
-					#chooser{
-
-						position:relative;
-						
-					}
-
-					#chooser ul {
-
-						display:none;
-						border:1px solid #222;
-						border-radius:7px;
-						-moz-border-radius:5px; /* Old Firefox */
-						
-						padding: 5px 10px;
-						width: auto;
-						background-color: #2A3943;
-						position:absolute;
-						z-index: 1;
-						top:-80px;
-						left:40%;
-						box-shadow: 5px 5px 2px rgba(10,10,10,0.5);
-
-		
-					}
-					
-					#chooser li{
-						font-size: 10px;
-						list-style:none;
-						padding-top: 5px;
-						padding-bottom: 5px;
-						display:list-item;
-					}
-					
-					.left {
-						display: inline-block;
-						text-align: center;
-						width: 30%;
-					}
-					.mid {
-						display: inline-block;
-						text-align: center;
-						width: 30%;
-					}
-					.right {
-
-						display: inline-block;
-						text-align: center;
-						width: 30%;
-					}
-				</style>
-				<script>
-					show = false;
-
-					function scssscs() {
-						show = !show;
-						if(show){
-							$('#m').css('display','inline');
-						}else{
-							$('#m').css('display','none');
-						}
-						
-						
-						
-					}
-					
-					function selectStream(appname){
-						console.log(appname);
-						$('#my-video_html5_api').attr('src','/hls/' + appname + '.m3u8');
-						$('#source').attr('src','/hls/' + appname + '.m3u8');
-						$('#source').attr('type','application/x-mpegURL');
-
-						//player.src('/hls/' + appname + '.m3u8');
-						player.load('/hls/' + appname + '.m3u8');
-						player.ready(function(){
-							player.play();
-						});
-						scssscs();
-						
-					}
-				
-				</script>
 				
 				<div class="video-bar">
 					<span class="left">在线: <span id="count">0</span></span>
 					
 					<span class="mid"></span>
 					<span id="chooser" class="right">
-						<span onclick="scssscs();">切换</span>
+						<span onclick="turn();">切换视角</span>
 						
 						<ul id="m">
 							
@@ -128,7 +47,7 @@
 
 		<div class="boxx">
 			
-			<h2 style="padding-left: 20px;">弹幕</h2>
+			<h2 style="padding-left: 20px;padding-top: 10px">聊天</h2>
 			<form onsubmit="return false;">
 				<input id="in"/>
 				<button id="submit" onclick="sendMessage()" value="发送">发送</button>
@@ -142,9 +61,13 @@
 		</div>
 	</main>
 	
-	<footer></footer>
-	
-	
+	<footer>
+		<div>
+			<p>星空直播<br><small>Copyright © <a href="http://www.xingkong.us">星空学生创新中心</a> 2017</small></p>
+		</div>
+	</footer>
+
+		
 	<script src="js/jquery.min.js"></script>
 
 	<script src="js/videojs-ie8.min.js"></script>
@@ -153,7 +76,9 @@
 	
 	<script src="js/bucket.js"></script>
 	<script src="js/watch.js"></script>
-		
+
 </body>
-    	
+    		
+	
+
 </html>

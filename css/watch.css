@@ -15,7 +15,7 @@ body {
 	width:100%;	
 	height: 100%;
 	background-color: rgb(35,56,77);
-	padding-bottom:40px;
+
 }
 
 header {
@@ -24,6 +24,22 @@ header {
 
 main {
 	width: 100%;
+}
+
+footer {
+	text-shadow: 3px 3px 5px #000000;
+	text-align:center;
+	color:#fff; /* 设置文字颜色 */
+	width:100%;
+	margin-top:20px;
+	padding-top:15px;
+	padding-bottom:15px;
+	//background-color: #2A3943;
+}
+
+footer a {
+	color:#fff; /* 设置文字颜色 */
+	text-decoration:none; /* 去掉下划线 */
 }
 
 .boxx {
@@ -45,12 +61,10 @@ main {
 .boxx input {
 	width:60%;
 	padding:5px;
-	border-radius:10px;
 }
 .boxx button {
 	width:15%;
 	padding:5px;
-	border-radius:5px;
 }
 .boxx ul {
 	list-style:none; /* 将默认的列表符号去掉 */
@@ -87,4 +101,63 @@ main {
 	border-color: #111;
 }
 
+#chooser{
+	
+	position:relative;
+	
+}
 
+#chooser ul {
+
+	display:none;
+	border:1px solid #222;
+	border-radius:7px;
+	-moz-border-radius:5px; /* Old Firefox */
+	
+	padding: 5px 10px;
+	width: auto;
+	background-color: #2A3943;
+	position:absolute;
+	z-index: 10;
+	top:-80px;
+	left:40%;
+	box-shadow: 5px 5px 2px rgba(10,10,10,0.5);
+
+
+}
+
+#chooser li{
+	font-size: 10px;
+	list-style:none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display:list-item;
+}
+
+.left {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+}
+.mid {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+}
+.right {
+
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+}
+
+.msgtime {
+	font-size: 12px;
+	color: #efefef;
+}
+
+.msgbody {
+	padding: 6px ;
+	font-size: 12px;
+	color: #BBB;
+}
