@@ -96,8 +96,8 @@ function resize(){
 	
 	$('#my-video').width(width);
 	$('#my-video').height(height);
- 	$('#my-video_html5_api').width(width);
-	$('#my-video_html5_api').height(height);
+ 	$('#my-video_html5_api').width('100%');
+	$('#my-video_html5_api').height('100%');
 	$('.video-bar').width(width - parseInt($('.video-bar').css('padding'))*2);
 	
 	var btw = 	$('.vjs-big-play-button').width();
