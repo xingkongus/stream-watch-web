@@ -1,137 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>星直播 | 足不出户，感受现场</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>星直播 | 足不出户，感受现场</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script type="text/javascript" src="js/jquery-3.2.0.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.0.js"></script>
 
-	<link rel="stylesheet" href="css/bootstrap.min.css"> 
-	<link rel="stylesheet" type="text/css" href="css/mobile.css">
-	<link rel="stylesheet" type="text/css" href="css/video-js.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mobile.css">
+  <link rel="stylesheet" type="text/css" href="css/video-js.css">
 </head>
+
 <body>
-	<div class="bigcontainer">
-	<header class="navbar navbar-default" style="margin:0;padding:0;">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
-		            <span class="sr-only">Toggle navigation</span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		        </button>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse" aria-expanded="true" style="">
-		         <ul class="nav navbar-nav">
-		            <li><a href="#">首页</a></li>
-		            <!-- <li><a href="#about">直播</a></li> -->
-		            <li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
-		              <ul class="dropdown-menu">
-		                <li><a href="#">觉浅</a></li>
-		                <li><a href="#">星名片</a></li>
-		                <li><a href="#">二手市场</a></li>
-						<li><a href="#">学习库</a></li>
-						<li><a href="javascript:void(0);">星地图</a></li>
-						<li><a href="javascript:void(0);">快乐班级</a></li>
-						<li><a href="javascript:void(0);">唱响新声</a></li>
-		              </ul>
-		            </li>
-		            <li><a href="#about">街访</a></li>
-		            <li><a href="#about">后工坊</a></li>
-		            <li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于星空 <span class="caret"></span></a>
-		              <ul class="dropdown-menu">
-		                <li><a href="#">组织介绍</a></li>
-		                <li><a href="#">足迹</a></li>
-		              </ul>
-		            </li>
-		          </ul>
-		        </div>
-			</div>
-	</header>
-	<article>
-		<section id="carousel-example-generic" class="carousel slide bannerpart" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-				<!-- <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li> -->
-			</ol>
-			<div class="carousel-inner" role="listbox">
-				<div class="item active" id="bannershow1">
-					<img src="image/live_common.jpg" data-holder-rendered="true">
-				</div>
-				<!-- <div class="item bannershow">
+  <div class="bigcontainer">
+    <header class="navbar navbar-default" style="margin:0;padding:0;">
+      <div class="innercontainer">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" style="">
+          <ul class="nav navbar-nav">
+            <li><a href="#">首页</a></li>
+            <!-- <li><a href="#about">直播</a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">觉浅</a></li>
+                <li><a href="#">星名片</a></li>
+                <li><a href="#">二手市场</a></li>
+                <li><a href="#">学习库</a></li>
+                <li><a href="javascript:void(0);">星地图</a></li>
+                <li><a href="javascript:void(0);">快乐班级</a></li>
+                <li><a href="javascript:void(0);">唱响新声</a></li>
+              </ul>
+            </li>
+            <li><a href="#about">街访</a></li>
+            <li><a href="#about">后工坊</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于星空 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">组织介绍</a></li>
+                <li><a href="#">足迹</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <article>
+      <section id="carousel-example-generic" class="carousel slide bannerpart" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+          <!-- <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li> -->
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active" id="bannershow1">
+            <img src="image/live_common.jpg" data-holder-rendered="true">
+          </div>
+          <!-- <div class="item bannershow">
 					<img src="image/banner2.jpg" data-holder-rendered="true">
 				</div> -->
-				<div class="item bannershow">
-					<img src="image/wechatBanner.jpg" data-holder-rendered="true">
-				</div>
-			</div>
-		</section>
-		<section class="keypart row">
-			<div class="col-xs-12 col-lg-9" style="margin: 0;padding: 0;">
-				<div class="row videoplay" id="videoplay" style="margin: 0;padding: 0;">
-					<div class="col-xs-1 col-lg-0" style="margin: 0;padding: 0;"></div>
-					<div class="col-xs-10 col-lg-12" style="margin: 0;padding: 0;">
-						<video id="my-video" class="video-js" controls="controls" preload="auto" poster="image/player_bg.jpg" data-setup="{}">
+          <div class="item bannershow">
+            <img src="image/wechatBanner.jpg" data-holder-rendered="true">
+          </div>
+        </div>
+      </section>
+      <section class="keypart row">
+        <div class="col-xs-12 col-lg-9" style="margin: 0;padding: 0;">
+          <div class="row videoplay" id="videoplay" style="margin: 0;padding: 0;">
+            <div class="col-xs-1 col-lg-0" style="margin: 0;padding: 0;"></div>
+            <div class="col-xs-10 col-lg-12" style="margin: 0;padding: 0;">
+              <video id="my-video" class="video-js" controls="controls" preload="auto" poster="image/player_bg.jpg" data-setup="{}">
 				 			<source id="source">
 						</video>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-lg-3 boxx" id="boxx" style="padding: 0;">
-				<div class="row" style="margin: 0;padding: 0;">
-					<div class="col-xs-1 col-lg-1" style="margin: 0;padding: 0;"></div>
-					<div class="col-xs-10 col-lg-11" style="margin: 0; padding: 0; border-radius: 10px;">
-						<div class="guide" id="guide">
-							<div class="segement nowsegem" segement="0">聊天室</div>
-							<div class="segement" segement="1">星空</div>
-						</div>
-						<div class="showpart" id="showpart">
-							<div id="guidecon" class="guidecon" >
-								<div id="content1" class="chats content">
-									<div class="danmucontent" id="danmucontent">
-										<ul id="danmu" class="danmu"></ul>
-									</div>
-									<form onsubmit="return false;" class="col-xs-12 video-bar" id="videobar">
-										<div class="col-xs-12" style="margin:0; padding:0; border-radius: 7px; border: 1px solid #d1d0d0;">
-											<div class="col-xs-10 col-md-pull-2 danmuInput">
-												<input type="text" id="in"/>
-											</div>
-											<div class="col-xs-2 col-md-push-9 danmuSubmit">
-												<button id="submit" onclick="sendMessage()" value="发送"></button>
-											</div>
-										</div>
-									</form>
-								</div>
-								<div id="content2" class="xingkongus content intro">
-									<p>星空学生创新中心肩负着“心怀梦想，锐意创新，打造一流校园网络服务”的组织使命，以“务实求学，学以致用，为将来就业做准备”的组织宗旨，以“务实、高效、创新、拼搏”的组织文化，以“小星空，大梦想；加入我们，快速成长”的组织口号，一直全心全意为师生服务，一路不断精益求精，突破自身的精神亦不断鞭策星空上下愈战愈勇。</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</article>
-	</div>
-	<footer>
-		<p>星空学生创新中心|Copyright&copy2006-2018</p>
-	</footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-lg-3 boxx" id="boxx" style="padding: 0;">
+          <div class="row" style="margin: 0;padding: 0;">
+            <div class="col-xs-1 col-lg-1" style="margin: 0;padding: 0;"></div>
+            <div class="col-xs-10 col-lg-11" style="margin: 0; padding: 0; border-radius: 10px;">
+              <div class="guide" id="guide">
+                <div class="segement nowsegem" segement="0">聊天室</div>
+                <div class="segement" segement="1">星空</div>
+              </div>
+              <div class="showpart" id="showpart">
+                <div id="guidecon" class="guidecon">
+                  <div id="content1" class="chats content">
+                    <div class="danmucontent" id="danmucontent">
+                      <ul id="danmu" class="danmu"></ul>
+                    </div>
+                    <form onsubmit="return false;" class="col-xs-12 video-bar" id="videobar">
+                      <div class="col-xs-12" style="margin:0; padding:0; border-radius: 7px; border: 1px solid #d1d0d0;">
+                        <div class="col-xs-10 col-md-pull-2 danmuInput">
+                          <input type="text" id="in" />
+                        </div>
+                        <div class="col-xs-2 col-md-push-9 danmuSubmit">
+                          <button id="submit" onclick="sendMessage()" value="发送"></button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div id="content2" class="xingkongus content intro">
+                    <p>星空学生创新中心肩负着“心怀梦想，锐意创新，打造一流校园网络服务”的组织使命，以“务实求学，学以致用，为将来就业做准备”的组织宗旨，以“务实、高效、创新、拼搏”的组织文化，以“小星空，大梦想；加入我们，快速成长”的组织口号，一直全心全意为师生服务，一路不断精益求精，突破自身的精神亦不断鞭策星空上下愈战愈勇。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
+  <footer>
+    <p>星空学生创新中心|Copyright&copy2006-2018</p>
+  </footer>
 
 
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 
-	<script type="text/javascript" src="js/videojs-ie8.min.js"></script>
-	<script type="text/javascript" src="js/video.js"></script>
-	<script type="text/javascript" src="js/videojs-contrib-hls.js"></script>
-	
-	<script type="text/javascript" src="js/bucket.js"></script>
-	<script type="text/javascript" src="js/watch.js"></script>
+  <script type="text/javascript" src="js/videojs-ie8.min.js"></script>
+  <script type="text/javascript" src="js/video.js"></script>
+  <script type="text/javascript" src="js/videojs-contrib-hls.js"></script>
+
+  <script type="text/javascript" src="js/bucket.js"></script>
+  <script type="text/javascript" src="js/watch.js"></script>
 
 </body>
+
 </html>
