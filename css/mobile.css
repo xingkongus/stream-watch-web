@@ -7,213 +7,239 @@
   * @desc: 星直播手机端网页
   */
 
-
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
-html ,
+
+html,
 body {
-	width: 100%;
+  width: 100%;
 }
+
 footer {
-	width: 100%;
-	height: 80px;
-	background-image: url(../image/bg_footer2.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	line-height: 80px;
-	color: #ffffff;
-	font-size: 15px;
-	text-align: center;
+  width: 100%;
+  height: 80px;
+  background-image: url(../image/bg_footer2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: 80px;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
 }
+
 footer p {
-	margin: 0;
+  margin: 0;
 }
 
 .uslogo {
-	display: block;
-	width: 120px;
-	height: 50px;
-	background-image: url(../image/uslogo.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: auto 85%;
+  display: block;
+  width: 120px;
+  height: 50px;
+  background-image: url(../image/uslogo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 85%;
 }
 
 article {
-	width: 100%;
+  width: 100%;
 }
 
 article .keypart {
-	padding: 20px 0 40px;
-	margin: 0;
+  padding: 20px 0 40px;
+  margin: 0;
 }
+
 article .keypart .heading {
-	padding-top: 18px;
-	text-align: center;
-	color: #4689e5;
-	font-size: 24px;
+  padding-top: 18px;
+  text-align: center;
+  color: #4689e5;
+  font-size: 24px;
 }
+
 article .keypart .videoplay {
-	padding-top: 13px;
+  padding-top: 13px;
 }
+
 article .keypart .videoplay .video-js {
-	margin: 0 auto;
-	max-width: 1000px;
-	width: auto;
-	/*min-height: 210px;*/
+  margin: 0 auto;
+  max-width: 1000px;
+  width: auto;
+  /*min-height: 210px;*/
 }
 
 article .keypart .boxx {
-	margin-top: 20px;
+  margin-top: 20px;
 }
+
 article .keypart .boxx .guide {
-	display: flex;
-	background-color: #fff;
-	list-style: none;
+  display: flex;
+  background-color: #fff;
+  list-style: none;
 }
+
 article .keypart .boxx .guide .segement {
-	width: 100%;
-	height: 40px;
-	line-height: 40px;
-	color: #97969f;
-	font-size: 12px;
-	text-align: center;
-	cursor: pointer;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #97969f;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
 }
+
 article .keypart .boxx .guide .nowsegem {
-	color: #6397e3;
-	position: relative;
+  color: #6397e3;
+  position: relative;
 }
+
 article .keypart .boxx .guide .nowsegem:after {
-	position: absolute;
-	top: 60%;
-	left: 0;
-	margin-left: 30%;
-	width: 40%;
-	height: 2px;
-	background: #1187fe;
-	content: '';
-	opacity: 1;
-	-webkit-transform: translateY(10px);
-	-moz-transform: translateY(10px);
-	transform: translateY(10px);
+  position: absolute;
+  top: 60%;
+  left: 0;
+  margin-left: 30%;
+  width: 40%;
+  height: 2px;
+  background: #1187fe;
+  content: '';
+  opacity: 1;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
 }
+
 article .keypart .boxx .danmucontent {
-	background-color: #f2f5f5;
-	overflow-y: scroll;
+  background-color: #f2f5f5;
+  overflow-y: scroll;
 }
 
 .video-bar {
-	margin: 0;
-	padding: 1%;
-	background-color: #fff;
+  margin: 0;
+  padding: 1%;
+  background-color: #fff;
 }
+
 .video-bar .danmuInput {
-	padding: 0;
-	right: 0;
-	height: 25px;
+  padding: 0;
+  right: 0;
+  height: 25px;
 }
-.video-bar .danmuInput > input {
-	width: 100%;
-	height: 100%;
-	border: 0;
+
+.video-bar .danmuInput>input {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
+
 .video-bar .danmuSubmit {
-	padding: 0;
-	left: 0;
-	border-width: 1px;
-	border-color: transparent transparent transparent #d1d0d0;
-	border-style: solid;
-	height: 25px;
-	cursor: pointer;
+  padding: 0;
+  left: 0;
+  border-width: 1px;
+  border-color: transparent transparent transparent #d1d0d0;
+  border-style: solid;
+  height: 25px;
+  cursor: pointer;
 }
-.video-bar .danmuSubmit > button {
-	width: 100%;
-	height: 100%;
-	border-width: 0;
-	background-color: transparent;
-	background-image: url(../image/submit.png);
-	background-position: center;
-	background-size: auto 50%;
-	background-repeat: no-repeat;
+
+.video-bar .danmuSubmit>button {
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  background-color: transparent;
+  background-image: url(../image/submit.png);
+  background-position: center;
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  outline: none;
 }
 
 .guidecon {
-	display: flex;
+  display: flex;
 }
+
 .showpart {
-	width: 100%;
-	overflow: hidden;
-	background-color: #f2f5f5;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f2f5f5;
 }
+
 article .keypart .boxx .danmucontent .danmu {
-	padding-left: 3%;
-	max-height: 440px;
+  padding-left: 3%;
+  max-height: 440px;
 }
+
 article .keypart .boxx .danmucontent .danmu>li {
-	list-style: none;
+  list-style: none;
 }
+
 article .keypart .boxx .danmucontent .danmu .msgtime {
-	font-size: 13px;
+  font-size: 13px;
 }
+
 article .keypart .boxx .danmucontent .danmu .msgbody {
-	padding: 6px;
-	font-size: 14px;
+  padding: 6px;
+  font-size: 14px;
 }
+
 article .keypart .boxx .temp {
-	padding: 1px;
-	background-color: #fff;
-	text-align: center;
-	color: #97969f;
+  padding: 1px;
+  background-color: #fff;
+  text-align: center;
+  color: #97969f;
 }
+
 article .keypart .boxx .temp p {
-	margin: 0;
-	padding: 0;
-	font-size: 8px;
+  margin: 0;
+  padding: 0;
+  font-size: 8px;
 }
+
 .intro {
-	padding: 20px 2% 15px;
+  padding: 20px 2% 15px;
 }
-.intro > p {
-	font-size: 13px;
-	text-indent: 26px;
+
+.intro>p {
+  font-size: 13px;
+  text-indent: 26px;
 }
+
 .intro .imgshow {
-	margin: 0 auto;
-	margin-bottom: 15px;
-	width: 70px;
-	height: 70px;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 900px) {
-	body {
-		background-image: url(../image/newbg.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-	}
-	.bigcontainer {
-		margin: 0 auto;
-		width: 75%;
-	}
-	header {
-		background-color: #ffffff; 
-	}
-	article .keypart .boxx {
-		margin-top: 0;
-	}
+  body {
+    background-image: url(../image/newbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .bigcontainer {
+    margin: 0 auto;
+    width: 75%;
+  }
+  header {
+    background-color: #ffffff;
+  }
+  article .keypart .boxx {
+    margin-top: 0;
+  }
 }
+
 @media screen and (max-width: 900px) {
-	header .container {
-		background-image: url(../image/uslogo.png);
-		background-position: 10px 5px;
-		background-size: auto 45px;
-		background-repeat: no-repeat;
-	}
+  header .innercontainer {
+    background-image: url(../image/uslogo.png);
+    background-position: 10px 5px;
+    background-size: auto 45px;
+    background-repeat: no-repeat;
+  }
 }
